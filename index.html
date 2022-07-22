@@ -62,13 +62,7 @@
                           <!-- <img class="logo1" src="./logo.png"> -->
                               <h4 id="" style="text-align:center;">THE SAUDIS NFTS MINT</h4>
                            <p class="offer">Total supply: 555 NFTs</p>
-                              <script>
-                              date = new Date();
-                              year = date.getFullYear();
-                              month = date.getMonth() + 1;
-                              day = date.getDate();
-                              document.getElementById("current_date").innerHTML = month + "/" + day + "/" + year;
-                           </script>
+                             
                           
                         </div>
                      </div>
@@ -77,7 +71,13 @@
                         <div id="payment-info-text">
                            <p class="title1">Free Mint</p>
                            <p class="title2">Available:<span class="freemint"> 455 </span></p>
-                            <p class="title2">Date:<span class="color"> 07/12/2022 </span></p>
+                            <p class="title2">Date:<span class="color">  <script>
+                              date = new Date();
+                              year = date.getFullYear();
+                              month = date.getMonth() + 1;
+                              day = date.getDate();
+                              document.write(month + "/" + day + "/" + year);
+                           </script> </span></p>
                            <hr>
                               <p class="lead basket" style="display:none;">
                            <span class="color">FREE:</span>
